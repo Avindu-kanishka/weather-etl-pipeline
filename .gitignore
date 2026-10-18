@@ -1,5 +1,47 @@
-venv/
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and generated files
+logs/
+*.log
+data/raw/
+data/processed/
+
+# Prefect
 .prefect/
-weather_data.db
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+
+
+# Local backup files
+app_backup.py
+run_once_backup.py
+# Local backup files
+app_backup.py
+run_once_backup.py
