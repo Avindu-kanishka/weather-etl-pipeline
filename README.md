@@ -3,6 +3,14 @@
 
 A Python-based ETL pipeline that collects weather data for Sri Lanka's 25 districts, stores observations in PostgreSQL, and presents weather insights through a Streamlit dashboard.
 
+
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
+![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-336791)
+![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B)
+![Pandas](https://img.shields.io/badge/Data-Pandas-150458)
+![License](https://img.shields.io/badge/License-Not%20Specified-lightgrey)
+
+
 ## Features
 
 - Weather data collection using the Open-Meteo API
@@ -18,26 +26,20 @@ A Python-based ETL pipeline that collects weather data for Sri Lanka's 25 distri
 
 ## Architecture
 
-```text
-Open-Meteo API
-      |
-      v
-Extract Weather Data
-      |
-      v
-Transform and Validate
-      |
-      v
-Load into PostgreSQL
-      |
-      +------------------+
-      |                  |
-      v                  v
-Streamlit Dashboard   ETL Logs
-      |
-      v
-Charts, KPIs and CSV Exports
+
+```mermaid
+flowchart TD
+    A[Open-Meteo API] --> B[Extract Weather Data]
+    B --> C[Transform and Validate]
+    C --> D[PostgreSQL Database]
+    D --> E[Streamlit Dashboard]
+    E --> F[Charts and CSV Exports]
+    B --> G[ETL Logs]
+    C --> G
+    D --> G
+    H[Windows Task Scheduler] --> B
 ```
+
 
 ## Technology Stack
 
