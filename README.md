@@ -185,3 +185,18 @@ https://open-meteo.com/
 ## License
 
 No license has been specified yet.
+
+
+## Dashboard Screenshots
+
+### Main Dashboard
+![Weather Dashboard](screenshots/weather-dashboard.png)
+
+### Historical Weather Trends
+![Historical Weather Trends](screenshots/historical-weather-trends.png)
+
+### Historical District Comparison
+![District Comparison](screenshots/district-comparison.png)
+
+### Latest Weather and CSV Export
+![Latest Weather Data](screenshots/latest-weather-data.png)
