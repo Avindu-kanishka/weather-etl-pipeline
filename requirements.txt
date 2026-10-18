@@ -1,4 +1,9 @@
+
 requests
 pandas
 prefect
 sqlalchemy
+psycopg[binary]
+python-dotenv
+streamlit
+plotly
